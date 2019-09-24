@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 選取到 #pic 內的 img */
+#pic img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#card {
+    background-color: #eee;
+    width: 780px;
+    border-radius: 10px;
+    padding: 60px 35px;
+    color: #333;
+    /* 顯示模式：格線 */
+    display: grid;
+    /* 格線模板欄位：欄位 */
+    /* 1fr 一個欄位 */
+    grid-template-columns: 1fr 1fr;
+    /* 格線間隙 */
+    grid-gap: 30px;
+    /* 區塊元素置中對齊：左右自動 */
+    /* 外距：100px; 全部 100px */
+    /* 外距：100px 200px; 上下 100px 左右 200px */
+    /* 外距：10px 20px 30px 40px; 上 10px 右 20px 下 30px 左 40px */
+    margin: 200px auto 0 auto;
+}
+
+#content {
+    padding-top: 45px;
+}
+
+#content h1 {
+    font-size: 3.5em;
+    /* 顯示模式：行內 - 會在同一行往左靠齊 */
+    display: inline;
+}
+
+#content #nick-name {
+    font-size: 1.5em;
+    display: inline;
+    background-color: #333;
+    color: #eee;
+    border-radius: 10px;
+    padding: 2px 7px;
+    margin-left: 10px;
+}
+
+#content #job {
+    font-size: 1.2em;
+    padding: 20px 0;
+}
+
+#content h3 {
+    padding: 5px 0;
+    font-size: 0.8em;
+}
+
+#content hr {
+    margin-top: 20px;
+}
+
+#content p {
+    padding: 30px 0;
+}
+
+#bg {
+    font-size: 6em;
+    text-align: center;
+    letter-spacing: 50px;
+    margin-left: 50px;
+    margin-top: 60px;
+    color: rgba(0, 0, 0, 0.02);
+}
